@@ -1,0 +1,25 @@
+{
+  "name": "currencyexchange",
+  "version": "1.0.0",
+  "description": "A project that handles data coming from an exchange API",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --open",
+    "lint": "eslint ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vicentevendramin/currencyExchange.git"
+  },
+  "keywords": [],
+  "author": "Vicente Vendramin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vicentevendramin/currencyExchange/issues"
+  },
+  "homepage": "https://github.com/vicentevendramin/currencyExchange#readme",
+  "dependencies": {
+    "eslint-config-trybe-frontend": "^1.3.1",
+    "vite": "^3.2.3"
+  }
+}
