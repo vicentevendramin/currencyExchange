@@ -3,7 +3,8 @@ import Swal from 'sweetalert2';
 
 const coinInput = document.querySelector('#coin');
 const searchButton = document.querySelector('#search-coin');
-const main = document.querySelector('main');
+const h2 = document.querySelector('h2');
+const liContainer = document.querySelector('.li-container');
 
 const BASE_URL = 'https://api.exchangerate.host/latest?base=';
 const SYMBOLS_URL = 'https://api.exchangerate.host/symbols';
@@ -13,18 +14,18 @@ const dataSymbols = await fetchSymbols.json();
 const symbols = Object.keys(dataSymbols.symbols);
 
 function renderCoins(data) {
-  main.innerHTML = '';
+  h2.innerHTML = '';
+  liContainer.innerHTML = '';
+
   const coins = Object.entries(data.rates);
 
-  const h2 = document.createElement('h2');
   h2.innerHTML = `Amounts referring to ${data.base}`;
-  main.appendChild(h2);
 
   coins.forEach((coin) => {
     const [coinName, value] = coin;
     const li = document.createElement('li');
-    li.innerHTML = `${coinName} - ${value}`;
-    main.appendChild(li);
+    li.innerHTML = `${coinName} - ${value.toFixed(2)}`;
+    liContainer.appendChild(li);
   });
 }
 

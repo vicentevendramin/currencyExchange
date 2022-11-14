@@ -4,18 +4,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
   <title>Currency Exchange</title>
 </head>
 <body>
-  <h1>Currency <span>Exchange</span></h1>
-  <section class="form">
-    <label for="coin">Enter the currency:</label>
-    <input id="coin" type="text" placeholder="USD">
-    <button id="search-coin">Search</button>
-    <main>
-      
-    </main>
-  </section>
+  <main>
+    <h1>Currency <span>Exchange</span></h1>
+    <section class="form">
+      <div class="input-container">
+        <label for="coin">Enter the currency:</label>
+        <input id="coin" type="text" placeholder="USD">
+      </div>
+      <button id="search-coin">Search</button>
+    </section>
+    <section id="main">
+      <h2></h2>
+      <div class="li-container"></div>
+    </section>
+  </main>
   <script src="src/main.js" type="module"></script>
 </body>
 </html>

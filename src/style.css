@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  box-sizing: border-box;
+  background-image: url(./images/background.svg);
+  font-family: 'Fira Code', monospace;
+}
+
+main {
+  margin: auto;
+  margin-left: 1rem;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3.75rem;
+  color: #FFFFFF;
+}
+
+span {
+  color: #95EBA8;
+}
+
+.form {
+  display: flex;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: .3rem;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: .75rem;
+  line-height: 1rem;
+}
+
+input {
+  all: unset;
+  width: 10.69rem;
+  height: 3rem;
+  margin-top: .3rem;
+  background: rgba(217, 217, 217, 0.1);
+  border-radius: .62rem;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.63rem;
+  text-indent: 1rem;
+}
+
+button {
+  width: 10.69rem;
+  height: 3rem;
+  margin-top: 1.6rem;
+  margin-left: .87rem;
+  background: #96EB95;
+  border: 1px solid #96EB95;
+  border-radius: .62rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.63rem;
+}
+
+#main {
+  margin-top: 3.56rem;
+  width: 96%;
+  height: 70vh;
+  background: rgba(255, 255, 255, 0.06);
+  overflow: auto;
+}
+
+h2 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.6rem;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.li-container {
+  list-style-image: url('./images/coin.svg');
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  width: 10rem;
+  padding: 1rem;
+  margin-left: 1.56rem;
+  margin-top: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  font-weight: 400;
+  font-size: 1rem;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    width: 72%;
+    margin: auto;
+    margin-top: 3.94rem;
+  }
+
+  #main {
+    width: 100%;
+  }
+}
