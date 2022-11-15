@@ -50,6 +50,7 @@ input {
   font-size: 1.25rem;
   line-height: 1.63rem;
   text-indent: 1rem;
+  color: #FFFFFF;
 }
 
 button {
@@ -67,10 +68,12 @@ button {
 
 #main {
   margin-top: 3.56rem;
+  padding-bottom: 1.5rem;
   width: 96%;
   height: 70vh;
   background: rgba(255, 255, 255, 0.06);
   overflow: auto;
+  border-radius: 1.25rem;
 }
 
 h2 {
@@ -98,6 +101,7 @@ li {
   font-size: 1rem;
   color: #FFFFFF;
   text-align: center;
+  border-radius: .3rem;
 }
 
 @media screen and (min-width: 992px) {
